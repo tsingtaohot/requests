@@ -6,8 +6,6 @@ import (
 	"io/ioutil"
 	"os"
 	"time"
-
-	"github.com/mallbook/commandline"
 )
 
 var (
@@ -54,11 +52,11 @@ func fileExist(file string) bool {
 }
 
 func init() {
-	prefix := commandline.PrefixPath()
-	filename := prefix + "/etc/conf/http.json"
-	err := loadConfig(filename, &config)
-	if err != nil {
-		fmt.Printf("Load config file(%s) fail, err = %s", filename, err.Error())
-		os.Exit(1)
-	}
+	// prefix := commandline.PrefixPath()
+	// filename := prefix + "/etc/conf/http.json"
+	// err := loadConfig(filename, &config)
+	// if err != nil {
+	// 	fmt.Printf("Load config file(%s) fail, err = %s", filename, err.Error())
+	// 	os.Exit(1)
+	// }
 }
